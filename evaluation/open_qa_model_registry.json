@@ -1,0 +1,34 @@
+{
+  "models": {
+    "gpt-5.4-pro": {
+      "provider": "azure_responses",
+      "model": "gpt-5.4-pro",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 900
+    },
+    "gpt-5.4-pro-medium": {
+      "provider": "azure_responses",
+      "model": "gpt-5.4-pro",
+      "reasoning_effort": "medium",
+      "max_output_tokens": 900
+    },
+    "gpt-5.4-pro-high": {
+      "provider": "azure_responses",
+      "model": "gpt-5.4-pro",
+      "reasoning_effort": "high",
+      "max_output_tokens": 900
+    },
+    "gpt-5.4": {
+      "provider": "azure_responses",
+      "model": "gpt-5.4",
+      "reasoning_effort": null,
+      "max_output_tokens": 900
+    },
+    "gpt-4o": {
+      "provider": "azure_responses",
+      "model": "gpt-4o",
+      "reasoning_effort": null,
+      "max_output_tokens": 900
+    }
+  }
+}

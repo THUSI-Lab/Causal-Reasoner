@@ -1,0 +1,148 @@
+from __future__ import annotations
+
+
+TASK_FAMILIES = [
+    {
+        "task_id": 1,
+        "dimension": "Executability",
+        "name": "Spatial Precondition",
+        "canonical_key": "Task_01_Spatial_Precondition",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 2,
+        "dimension": "Executability",
+        "name": "Affordance Precondition",
+        "canonical_key": "Task_02_Affordance_Precondition",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 3,
+        "dimension": "Executability",
+        "name": "Physical Feasibility",
+        "canonical_key": "Task_03_Physical_Feasibility",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 4,
+        "dimension": "Effects",
+        "name": "Affordance Visual Semantics",
+        "canonical_key": "Task_04_Affordance_Visual_Semantics",
+        "evidence_type": "keyframe_single",
+    },
+    {
+        "task_id": 5,
+        "dimension": "Effects",
+        "name": "Holistic Causal Chain",
+        "canonical_key": "Task_05_Holistic_Causal_Chain",
+        "evidence_type": "keyframe_single",
+    },
+    {
+        "task_id": 6,
+        "dimension": "Effects",
+        "name": "Spatial Postcondition",
+        "canonical_key": "Task_06_Spatial_Postcondition",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 7,
+        "dimension": "Effects",
+        "name": "Affordance Postcondition",
+        "canonical_key": "Task_07_Affordance_Postcondition",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 8,
+        "dimension": "Composition",
+        "name": "Goal Recognition",
+        "canonical_key": "Task_08_Goal_Recognition",
+        "evidence_type": "video_prefix",
+    },
+    {
+        "task_id": 9,
+        "dimension": "Composition",
+        "name": "Macro Anchor Extraction",
+        "canonical_key": "Task_09_Macro_Anchor_Extraction",
+        "evidence_type": "video_prefix",
+    },
+    {
+        "task_id": 10,
+        "dimension": "Composition",
+        "name": "Clip-to-Step Goal",
+        "canonical_key": "Task_10_Clip_to_Step_Goal",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 11,
+        "dimension": "Composition",
+        "name": "Action Phrase",
+        "canonical_key": "Task_11_Action_Phrase",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 12,
+        "dimension": "Composition",
+        "name": "State Evolution",
+        "canonical_key": "Task_12_State_Evolution",
+        "evidence_type": "keyframe_single",
+    },
+    {
+        "task_id": 13,
+        "dimension": "Composition",
+        "name": "Strategic Rationale",
+        "canonical_key": "Task_13_Strategic_Rationale",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 14,
+        "dimension": "Composition",
+        "name": "Inter-Step Dependency",
+        "canonical_key": "Task_14_Inter_Step_Dependency",
+        "evidence_type": "video_clip_pair",
+    },
+    {
+        "task_id": 15,
+        "dimension": "Composition",
+        "name": "Next Step Prediction",
+        "canonical_key": "Task_15_Next_Step_Prediction",
+        "evidence_type": "video_prefix",
+    },
+    {
+        "task_id": 16,
+        "dimension": "Composition",
+        "name": "Middle Steps Infill",
+        "canonical_key": "Task_16_Middle_Steps_Infill",
+        "evidence_type": "video_clip_pair",
+    },
+    {
+        "task_id": 17,
+        "dimension": "Composition",
+        "name": "Next K Steps Prediction",
+        "canonical_key": "Task_17_Next_K_Steps_Prediction",
+        "evidence_type": "video_prefix",
+    },
+    {
+        "task_id": 18,
+        "dimension": "Robustness",
+        "name": "Bad Plan Diagnosis and Repair",
+        "canonical_key": "Task_18_Bad_Plan_Diagnosis_And_Repair",
+        "evidence_type": "video_prefix",
+    },
+    {
+        "task_id": 19,
+        "dimension": "Robustness",
+        "name": "Counterfactual Outcome",
+        "canonical_key": "Task_19_Counterfactual_Outcome",
+        "evidence_type": "video_clip",
+    },
+    {
+        "task_id": 20,
+        "dimension": "Robustness",
+        "name": "Failure Recovery",
+        "canonical_key": "Task_20_Failure_Recovery",
+        "evidence_type": "video_clip",
+    },
+]
+
+TASK_BY_KEY = {task["canonical_key"]: task for task in TASK_FAMILIES}
+TASK_BY_ID = {task["task_id"]: task for task in TASK_FAMILIES}
