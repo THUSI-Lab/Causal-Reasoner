@@ -9,6 +9,9 @@ Zheng Lu<sup>1,2,*</sup>, Mingqi Gao<sup>1,*</sup>, Qinlei Xie<sup>1,*</sup>, Wa
 <sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>&dagger;</sup>Corresponding authors
 
 <p>
+  <a href="https://arxiv.org/abs/2606.01810">
+    <img src="https://img.shields.io/badge/arXiv-2606.01810-b31b1b?style=flat-square" alt="arXiv">
+  </a>
   <a href="https://huggingface.co/Lululzz/Causal_Planner">
     <img src="https://img.shields.io/badge/Model-Causal_Planner-yellow?style=flat-square" alt="Model">
   </a>
@@ -24,7 +27,8 @@ Zheng Lu<sup>1,2,*</sup>, Mingqi Gao<sup>1,*</sup>, Qinlei Xie<sup>1,*</sup>, Wa
 [Evaluation](#evaluation) •
 [Generation And Filtering](#generation-and-filtering) •
 [Training Utilities](#training-utilities) •
-[Repository Layout](#repository-layout)
+[Repository Layout](#repository-layout) •
+[Citation](#citation)
 
 <img src="assets/paradigm_comparison.jpg" alt="Paradigm comparison for causal planning" width="96%">
 
@@ -245,3 +249,19 @@ The reward package supports rule-based task rewards and optional multimodal rubr
 This repository intentionally excludes benchmark data, training data, raw videos, model checkpoints, generated outputs, runtime caches, machine-specific job scripts, and environment-specific activation commands.
 
 All prompt content required by the active generation, filtering, evaluation, SFT, and reward code is stored in Python or shell source files. Markdown files are kept only as README files.
+
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@misc{lu2026tokenpredictors,
+  title={Token Predictors Are Not Planners: Building Physically Grounded Causal Reasoners},
+  author={Lu, Zheng and Gao, Mingqi and Xie, Qinlei and Zhong, Wanqi and Cui, Hanwen and Cao, Heng and Song, Zirui and Yang, Yifan and Luo, Chong and Liu, Bei and Li, Yiming},
+  year={2026},
+  eprint={2606.01810},
+  archivePrefix={arXiv},
+  primaryClass={cs.AI},
+  url={https://arxiv.org/abs/2606.01810}
+}
+```
