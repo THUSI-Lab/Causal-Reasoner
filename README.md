@@ -1,16 +1,16 @@
 <div align="center">
 
-# *Token Predictors Are Not Planners*: Building Physically Grounded Causal Reasoners
+# *Planning Takes More Than Token Prediction*: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners
 
-Zheng Lu<sup>1,2,*</sup>, Mingqi Gao<sup>1,*</sup>, Qinlei Xie<sup>1,*</sup>, Wanqi Zhong<sup>1</sup>, Hanwen Cui<sup>1</sup>, Heng Cao<sup>1</sup>, Zirui Song<sup>3</sup>, Yifan Yang<sup>2</sup>, Chong Luo<sup>2</sup>, Bei Liu<sup>2,&dagger;</sup>, Yiming Li<sup>1,&dagger;</sup>
+Zirong Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei Xie<sup>2</sup>, Wanqi Zhong<sup>2</sup>, Hanwen Cui<sup>2</sup>, Lijie Wang<sup>5</sup>, Chong Luo<sup>3</sup>, Bei Liu<sup>3</sup>, Yiming Li<sup>2</sup>, Xiuying Chen<sup>1,&dagger;</sup>
 
-<sup>1</sup>Tsinghua University &nbsp;&nbsp; <sup>2</sup>Microsoft Research Asia &nbsp;&nbsp; <sup>3</sup>MBZUAI
+<sup>1</sup>MBZUAI &nbsp;&nbsp; <sup>2</sup>Tsinghua University &nbsp;&nbsp; <sup>3</sup>Microsoft Research Asia &nbsp;&nbsp; <sup>4</sup>Peking University &nbsp;&nbsp; <sup>5</sup>Zhejiang University
 
-<sup>*</sup>Equal contribution &nbsp;&nbsp; <sup>&dagger;</sup>Corresponding authors
+<sup>&dagger;</sup>Corresponding author
 
 <p>
-  <a href="https://arxiv.org/abs/2606.01810">
-    <img src="https://img.shields.io/badge/arXiv-2606.01810-b31b1b?style=flat-square" alt="arXiv">
+  <a href="https://arxiv.org/abs/2606.01810v3">
+    <img src="https://img.shields.io/badge/arXiv-2606.01810v3-b31b1b?style=flat-square" alt="arXiv">
   </a>
   <a href="https://huggingface.co/Lululzz/Causal_Planner">
     <img src="https://img.shields.io/badge/Model-Causal_Planner-yellow?style=flat-square" alt="Model">
@@ -36,7 +36,7 @@ Zheng Lu<sup>1,2,*</sup>, Mingqi Gao<sup>1,*</sup>, Qinlei Xie<sup>1,*</sup>, Wa
 
 ## Overview
 
-This repository is the code release for **Token Predictors Are Not Planners: Building Physically Grounded Causal Reasoners**. The project studies embodied planning as physically grounded causal reasoning rather than surface-level next-token continuation, focusing on the observation that plausible action sequences can still fail when they ignore hidden preconditions, object affordances, state transitions, temporal dependencies, or recovery constraints.
+This repository is the code release for **Planning Takes More Than Token Prediction: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners**. The project studies embodied planning as physically grounded causal reasoning rather than surface-level next-token continuation, focusing on the observation that plausible action sequences can still fail when they ignore hidden preconditions, object affordances, state transitions, temporal dependencies, or recovery constraints.
 
 In the paper, Causal Plan denotes the framework and released resources. The code supports the main technical components described in the accompanying paper:
 
@@ -255,13 +255,13 @@ All prompt content required by the active generation, filtering, evaluation, SFT
 If you find this work useful, please cite:
 
 ```bibtex
-@misc{lu2026tokenpredictors,
-  title={Token Predictors Are Not Planners: Building Physically Grounded Causal Reasoners},
-  author={Lu, Zheng and Gao, Mingqi and Xie, Qinlei and Zhong, Wanqi and Cui, Hanwen and Cao, Heng and Song, Zirui and Yang, Yifan and Luo, Chong and Liu, Bei and Li, Yiming},
+@misc{song2026planningtakestokenprediction,
+  title={Planning Takes More Than Token Prediction: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners},
+  author={Zirong Song and Zheng Lu and Mingqi Gao and Qinlei Xie and Wanqi Zhong and Hanwen Cui and Lijie Wang and Chong Luo and Bei Liu and Yiming Li and Xiuying Chen},
   year={2026},
   eprint={2606.01810},
   archivePrefix={arXiv},
   primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2606.01810}
+  url={https://arxiv.org/abs/2606.01810v3}
 }
 ```
