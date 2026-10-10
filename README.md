@@ -2,7 +2,7 @@
 
 # *Planning Takes More Than Token Prediction*: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners
 
-Zirong Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei Xie<sup>2</sup>, Wanqi Zhong<sup>2</sup>, Hanwen Cui<sup>2</sup>, Lijie Wang<sup>5</sup>, Chong Luo<sup>3</sup>, Bei Liu<sup>3</sup>, Yiming Li<sup>2</sup>, Xiuying Chen<sup>1,&dagger;</sup>
+Zirui Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei Xie<sup>2</sup>, Wanqi Zhong<sup>2</sup>, Hanwen Cui<sup>2</sup>, Lijie Wang<sup>5</sup>, Chong Luo<sup>3</sup>, Bei Liu<sup>3</sup>, Yiming Li<sup>2</sup>, Xiuying Chen<sup>1,&dagger;</sup>
 
 <sup>1</sup>MBZUAI &nbsp;&nbsp; <sup>2</sup>Tsinghua University &nbsp;&nbsp; <sup>3</sup>Microsoft Research Asia &nbsp;&nbsp; <sup>4</sup>Peking University &nbsp;&nbsp; <sup>5</sup>Zhejiang University
 
@@ -257,7 +257,7 @@ If you find this work useful, please cite:
 ```bibtex
 @misc{song2026planningtakestokenprediction,
   title={Planning Takes More Than Token Prediction: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners},
-  author={Zirong Song and Zheng Lu and Mingqi Gao and Qinlei Xie and Wanqi Zhong and Hanwen Cui and Lijie Wang and Chong Luo and Bei Liu and Yiming Li and Xiuying Chen},
+  author={Song, Zirui and Zheng Lu and Mingqi Gao and Qinlei Xie and Wanqi Zhong and Hanwen Cui and Lijie Wang and Chong Luo and Bei Liu and Yiming Li and Xiuying Chen},
   year={2026},
   eprint={2606.01810},
   archivePrefix={arXiv},
