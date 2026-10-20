@@ -2,15 +2,15 @@
 
 # *Planning Takes More Than Token Prediction*: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners
 
-Zirui Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei Xie<sup>2</sup>, Wanqi Zhong<sup>2</sup>, Hanwen Cui<sup>2</sup>, Lijie Wang<sup>5</sup>, Chong Luo<sup>3</sup>, Bei Liu<sup>3</sup>, Yiming Li<sup>2</sup>, Xiuying Chen<sup>1,&dagger;</sup>
+Zheng Lu<sup>1,2,3,*</sup>, Mingqi Gao<sup>1,*</sup>, Qinlei Xie<sup>1,*</sup>, Wanqi Zhong<sup>1</sup>, Hanwen Cui<sup>1</sup>, Zirui Song<sup>4</sup>, Lijie Wang<sup>5</sup>, Chong Luo<sup>2</sup>, Bei Liu<sup>2,&dagger;</sup>, Yiming Li<sup>1,&dagger;</sup>
 
-<sup>1</sup>MBZUAI &nbsp;&nbsp; <sup>2</sup>Tsinghua University &nbsp;&nbsp; <sup>3</sup>Microsoft Research Asia &nbsp;&nbsp; <sup>4</sup>Peking University &nbsp;&nbsp; <sup>5</sup>Zhejiang University
+<sup>1</sup>Tsinghua University &nbsp;&nbsp; <sup>2</sup>Microsoft Research Asia &nbsp;&nbsp; <sup>3</sup>Peking University &nbsp;&nbsp; <sup>4</sup>MBZUAI &nbsp;&nbsp; <sup>5</sup>Zhejiang University
 
-<sup>&dagger;</sup>Corresponding author
+<sup>*</sup>Equal contribution. &nbsp;&nbsp; <sup>&dagger;</sup>Corresponding authors.
 
 <p>
-  <a href="https://arxiv.org/abs/2606.01810v3">
-    <img src="https://img.shields.io/badge/arXiv-2606.01810v3-b31b1b?style=flat-square" alt="arXiv">
+  <a href="https://arxiv.org/abs/2606.01810v5">
+    <img src="https://img.shields.io/badge/arXiv-2606.01810v5-b31b1b?style=flat-square" alt="arXiv v5">
   </a>
   <a href="https://huggingface.co/Lululzz/Causal_Planner">
     <img src="https://img.shields.io/badge/Model-Causal_Planner-yellow?style=flat-square" alt="Model">
@@ -23,6 +23,8 @@ Zirui Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei
   </a>
 </p>
 
+[Paper (arXiv v5)](https://arxiv.org/abs/2606.01810v5) • [PDF](https://arxiv.org/pdf/2606.01810v5) • Revised 19 October 2026
+
 [Overview](#overview) •
 [Evaluation](#evaluation) •
 [Generation And Filtering](#generation-and-filtering) •
@@ -30,13 +32,15 @@ Zirui Song<sup>1</sup>, Zheng Lu<sup>2,3,4</sup>, Mingqi Gao<sup>2</sup>, Qinlei
 [Repository Layout](#repository-layout) •
 [Citation](#citation)
 
-<img src="assets/paradigm_comparison.jpg" alt="Paradigm comparison for causal planning" width="96%">
+<img src="assets/paradigm_comparison.jpg" alt="Figure 1 (arXiv v5): paradigm comparison for causal planning" width="96%">
 
 </div>
 
 ## Overview
 
 This repository is the code release for **Planning Takes More Than Token Prediction: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners**. The project studies embodied planning as physically grounded causal reasoning rather than surface-level next-token continuation, focusing on the observation that plausible action sequences can still fail when they ignore hidden preconditions, object affordances, state transitions, temporal dependencies, or recovery constraints.
+
+In [arXiv v5](https://arxiv.org/abs/2606.01810v5), Causal Planner, built on Qwen3-VL-8B, improves its backbone's Causal-Plan-Bench score from **33.23 to 45.28** (**36.3% relative gain**); GPT-6-astra scores **43.04**. It also improves on three external benchmarks without benchmark-specific adaptation. The paper reports an empirical Causal-Supervision Scaling Trend, paired no-vision controls demonstrating substantial visual dependence, and cross-judge comparisons and human scoring to assess evaluation reliability.
 
 In the paper, Causal Plan denotes the framework and released resources. The code supports the main technical components described in the accompanying paper:
 
@@ -142,7 +146,7 @@ The average is the arithmetic mean over EgoPlan-Bench2, RoboVQA, and Cosmos-Reas
 
 ### Ablation Results
 
-Scores follow the same four-dimension Causal-Plan-Bench protocol.
+Scores follow the same four-dimension Causal-Plan-Bench protocol. SFT variants use reasoning traces unless explicitly marked w/o SFT Traces.
 
 <p align="center">
   <img src="assets/table_ablation_results.png" alt="Causal Planner ablation results" width="96%">
@@ -255,13 +259,13 @@ All prompt content required by the active generation, filtering, evaluation, SFT
 If you find this work useful, please cite:
 
 ```bibtex
-@misc{song2026planningtakestokenprediction,
+@misc{lu2026planningtakestokenprediction,
   title={Planning Takes More Than Token Prediction: Causal Plan for Benchmarking and Building Physically Grounded Embodied Reasoners},
-  author={Song, Zirui and Zheng Lu and Mingqi Gao and Qinlei Xie and Wanqi Zhong and Hanwen Cui and Lijie Wang and Chong Luo and Bei Liu and Yiming Li and Xiuying Chen},
+  author={Zheng Lu and Mingqi Gao and Qinlei Xie and Wanqi Zhong and Hanwen Cui and Zirui Song and Lijie Wang and Chong Luo and Bei Liu and Yiming Li},
   year={2026},
   eprint={2606.01810},
   archivePrefix={arXiv},
   primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2606.01810v3}
+  url={https://arxiv.org/abs/2606.01810v5}
 }
 ```
